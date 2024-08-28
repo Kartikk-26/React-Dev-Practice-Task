@@ -93,11 +93,11 @@ This repository serves as a workspace for continuous learning and improvement. I
 
 Contributions are highly appreciated! If you'd like to contribute to this repository, follow these steps:
 
-- Fork the repository : `git clone https://github.com/Kartikk-26/React-Dev-Practice.git `
+- Fork the repository : `Click on the "Fork" button in the upper-right corner of the page. `
 - Create a new branch : `git checkout -b feature/your-feature`  
 - Commit your changes : `git commit -m 'Add new feature'`  
 - Push your branch : `git push origin feature/your-feature`  
-- Open a pull request for review
+- Open a pull request for review : `In your GitHub repo, go to "Pull Requests," click "New Pull Request," choose your branch, and create the pull request. `
 
 ## 💡 Connect with Me
 
