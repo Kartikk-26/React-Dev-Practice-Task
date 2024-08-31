@@ -92,3 +92,57 @@ export default App
 
 // ( DAY 3 APP.JSX )
 
+//Task 1 ( App.jsx for Greet.jsx )
+
+import React from "react";
+import Greet from "./Day3/Greet";
+
+function App() {
+  return (
+    <div>
+      <Greet name = "Kartik"/>
+    </div>
+  )
+}
+
+export default App
+//Short cut ( rfce )
+
+
+//Task 2 ( App.jsx for ProfileCard.jsx )
+
+import React from "react";
+import ProfileCard from "./Day3/ProfileCard";
+
+function App() {
+  const profiles = [
+    {
+      name: 'Kavya Paliwal ', age: '22', location:'Udaipur'
+    },
+
+    {
+      name:'Kartik Jain', age: '20', location:'Udaipur'
+    },
+
+    {
+      name: 'Angha Varangaonkar', age: '21', location:'Udaipur'
+    }
+  ]
+
+return (
+    <div className="flex flex-col items-center space-y-4 p-4">
+      {
+        profiles.map((profile,index) =>(
+          <ProfileCard
+          key = {index}
+          name = {profile.name}
+          age = {profile.age}
+          location = {profile.location}
+          />
+        ))}
+    </div>
+  )
+}
+
+export default App
+

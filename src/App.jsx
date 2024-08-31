@@ -1,44 +1,33 @@
-import React from 'react';
-import MyData from './Day2/MyData'
+import React from "react";
+import ProfileCard from "./Day3/ProfileCard";
 
 function App() {
-  const Array = [
+  const profiles = [
     {
-      productName : "Iphone 16",
-      price : "$900",
-      description : "This has the best Security"
+      name: 'Kavya Paliwal ', age: '22', location:'Udaipur'
     },
 
     {
-      productName : "Samsung S13",
-      price : "$800",
-      description : "This has the best Camera"
+      name:'Kartik Jain', age: '20', location:'Udaipur'
     },
 
     {
-      productName : "OnePlus",
-      price : "$85",
-      description : "This has the best UI/UX"
+      name: 'Angha Varangaonkar', age: '21', location:'Udaipur'
     }
   ]
-  
-  
-  
-  return (
-    <div>
-      <h1>Product List :</h1>
+
+return (
+    <div className="flex flex-col items-center space-y-4 p-4">
       {
-        Array.map((value,index)=>(
-          <MyData 
+        profiles.map((profile,index) =>(
+          <ProfileCard
           key = {index}
-          pname = {value.productName}
-          price = {value.price}
-          pdescription = {value.description}
+          name = {profile.name}
+          age = {profile.age}
+          location = {profile.location}
           />
-        ))
-      }
+        ))}
     </div>
-    
   )
 }
 
